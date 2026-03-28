@@ -177,6 +177,9 @@
     .contact-notice { background: var(--warm); border-left: 3px solid var(--terra); padding: 1rem 1.25rem; font-size: 0.84rem; opacity: 0.78; margin-top: 1.25rem; line-height: 1.8; }
     .supporter-badge { display: inline-block; background: var(--warm); padding: 0.45rem 0.9rem; font-size: 0.78rem; color: var(--forest); font-weight: 500; margin: 0.25rem 0.25rem 0 0; text-decoration: none; transition: background 0.2s; }
     .supporter-badge:hover { background: var(--mist); }
+    .supporter-logo { display: inline-block; margin: 0.5rem 1rem 0 0; opacity: 0.85; transition: opacity 0.2s; vertical-align: middle; line-height: 0; font-size: 0; color: transparent; text-decoration: none; }
+    .supporter-logo:hover { opacity: 1; }
+    .supporter-logo img { height: 48px; width: auto; display: block; }
     footer { background: var(--bark); color: rgba(255,255,255,0.45); padding: 2rem 3rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.77rem; flex-wrap: wrap; gap: 1rem; }
     footer a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
     footer a:hover { color: #fff; }
@@ -451,8 +454,8 @@
         <p>Wir heißen Kinder aus deutschen, binationalen und nicht-deutschen Familien willkommen. Der Kindergarten bietet 19 Plätze für Kinder im Alter von 3–6 Jahren. Bewerbungen werden über unser Online-Formular eingereicht.</p>
         <p>Bitte beachten: Während der Öffnungszeiten ist das Team vollständig der Betreuung der Kinder gewidmet. Wir bitten Sie, ohne Einladung weder anzurufen noch vorbeizukommen. Anfragen bitte ausschließlich per E-Mail.</p>
         <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="https://kindergarten-baobab.de/online-antrag/" class="btn-primary" target="_blank" rel="noopener">Online-Anmeldeformular</a>
-          <a href="https://kindergarten-baobab.de/offene-stellen/" class="btn-secondary" target="_blank" rel="noopener">Offene Stellen</a>
+          <a href="/de/apply/" class="btn-primary">Online-Anmeldeformular</a>
+          <a href="/de/jobs/" class="btn-secondary">Offene Stellen</a>
         </div>
       </div>
       <div class="apply-box fade-up" style="transition-delay:0.12s">
@@ -498,7 +501,7 @@
           </div>
           <div class="contact-item">
             <span class="contact-icon">✉</span>
-            <span><a href="/cdn-cgi/l/email-protection#86e7e8ebe3eae2f3e8e1c6edefe8e2e3f4e1e7f4f2e3e8abe4e7e9e4e7e4a8e2e3"><span class="__cf_email__" data-cfemail="2746494a424b43524940674c4e494342554046555342490a454648454645094342">[email&#160;protected]</span></a></span>
+            <span><a href="/cdn-cgi/l/email-protection#9efff0f3fbf2faebf0f9def5f7f0fafbecf9ffeceafbf0b3fcfff1fcfffcb0fafb"><span class="__cf_email__" data-cfemail="14757a79717870617a73547f7d7a70716673756660717a3976757b7675763a7071">[email&#160;protected]</span></a></span>
           </div>
           <div class="contact-notice">
             Bitte besuchen Sie den Kindergarten nicht ohne vorherige Terminvereinbarung. Während der Öffnungszeiten ist das Team vollständig der Betreuung der Kinder gewidmet.
@@ -510,9 +513,15 @@
         <div class="contact-box">
           <h4>Gefördert von</h4>
           <p style="font-size:0.87rem;opacity:0.72;line-height:1.9;margin-bottom:1.25rem">Die Eltern-Kind-Initiative wird vom Freistaat Bayern und dem Referat für Bildung und Sport, LHM, gefördert.</p>
-          <a href="https://stadt.muenchen.de/rathaus/verwaltung/referat-bildung-sport.html" class="supporter-badge" target="_blank" rel="noopener">Stadt München · RBS</a>
-          <a href="https://www.bayern.de/" class="supporter-badge" target="_blank" rel="noopener">Freistaat Bayern</a>
-          <a href="https://www.montessoribayern.de/" class="supporter-badge" target="_blank" rel="noopener">Montessori Landesverband Bayern</a>
+          <a href="https://stadt.muenchen.de/rathaus/verwaltung/referat-bildung-sport.html" class="supporter-logo" target="_blank" rel="noopener">
+            <img src="https://kindergarten-baobab.de/wordpress/wp-content/uploads/2024/10/logomunich-300x110.png" alt="Stadt München – Referat für Bildung und Sport" />
+          </a>
+          <a href="https://www.bayern.de/" class="supporter-logo" target="_blank" rel="noopener">
+            <img src="https://www.bayern.de/wp-content/uploads/2021/09/Grosses-Staatswappen_klein_rgb.png" alt="Freistaat Bayern" style="height:48px;width:auto;display:block;" />
+          </a>
+          <a href="https://www.montessoribayern.de/" class="supporter-logo" target="_blank" rel="noopener">
+            <img src="https://www.montessoribayern.de/typo3conf/ext/sitepackage/Resources/Public/Images/Logos/LogoLand.svg" alt="Montessori Landesverband Bayern" />
+          </a>
         </div>
         <div class="contact-box" style="margin-top:0">
           <h4>Rechtliches</h4>
@@ -532,7 +541,7 @@
   <div class="footer-links">
     <a href="https://kindergarten-baobab.de/datenschutz/">Datenschutz</a>
     <a href="https://kindergarten-baobab.de/impressum/">Impressum</a>
-    <a href="https://kindergarten-baobab.de/offene-stellen/">Stellen</a>
+    <a href="/de/jobs/">Stellen</a>
   </div>
 </footer>
 
