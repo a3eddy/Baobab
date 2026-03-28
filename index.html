@@ -207,6 +207,9 @@
     .contact-notice { background: var(--warm); border-left: 3px solid var(--terra); padding: 1rem 1.25rem; font-size: 0.84rem; opacity: 0.78; margin-top: 1.25rem; line-height: 1.8; }
     .supporter-badge { display: inline-block; background: var(--warm); padding: 0.45rem 0.9rem; font-size: 0.78rem; color: var(--forest); font-weight: 500; margin: 0.25rem 0.25rem 0 0; text-decoration: none; transition: background 0.2s; }
     .supporter-badge:hover { background: var(--mist); }
+    .supporter-logo { display: inline-block; margin: 0.5rem 1rem 0 0; opacity: 0.85; transition: opacity 0.2s; vertical-align: middle; }
+    .supporter-logo:hover { opacity: 1; }
+    .supporter-logo img { height: 48px; width: auto; display: block; }
 
     /* FOOTER */
     footer { background: var(--bark); color: rgba(255,255,255,0.45); padding: 2rem 3rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.77rem; flex-wrap: wrap; gap: 1rem; }
@@ -487,8 +490,8 @@
         <p>We welcome children from German, binational, and non-German families. The kindergarten offers 19 places for children aged 3–6. Applications are submitted via our online form.</p>
         <p>Please note: during opening hours, the team is fully dedicated to the children. We kindly ask that you do not call or visit without an invitation. All enquiries by email only.</p>
         <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="https://kindergarten-baobab.de/online-antrag/" class="btn-primary" target="_blank" rel="noopener">Online Application Form</a>
-          <a href="https://kindergarten-baobab.de/offene-stellen/" class="btn-secondary" target="_blank" rel="noopener">Open Positions</a>
+          <a href="/apply/" class="btn-primary">Online Application Form</a>
+          <a href="/jobs/" class="btn-secondary">Open Positions</a>
         </div>
       </div>
       <div class="apply-box fade-up" style="transition-delay:0.12s">
@@ -546,9 +549,15 @@
         <div class="contact-box">
           <h4>Supported by</h4>
           <p style="font-size:0.87rem;opacity:0.72;line-height:1.9;margin-bottom:1.25rem">Die Eltern-Kind-Initiative wird vom Freistaat Bayern und dem Referat für Bildung und Sport, LHM, gefördert.</p>
-          <a href="https://stadt.muenchen.de/rathaus/verwaltung/referat-bildung-sport.html" class="supporter-badge" target="_blank" rel="noopener">Stadt München · RBS</a>
-          <a href="https://www.bayern.de/" class="supporter-badge" target="_blank" rel="noopener">Freistaat Bayern</a>
-          <a href="https://www.montessoribayern.de/" class="supporter-badge" target="_blank" rel="noopener">Montessori Landesverband Bayern</a>
+          <a href="https://stadt.muenchen.de/rathaus/verwaltung/referat-bildung-sport.html" class="supporter-logo" target="_blank" rel="noopener">
+            <img src="https://kindergarten-baobab.de/wordpress/wp-content/uploads/2024/10/logomunich-300x110.png" alt="Stadt München – Referat für Bildung und Sport" />
+          </a>
+          <a href="https://www.bayern.de/" class="supporter-logo" target="_blank" rel="noopener">
+            <img src="https://www.bayern.de/wp-content/uploads/2021/09/Grosses-Staatswappen_klein_rgb.png" alt="Freistaat Bayern" />
+          </a>
+          <a href="https://www.montessoribayern.de/" class="supporter-logo" target="_blank" rel="noopener">
+            <img src="https://www.montessoribayern.de/typo3conf/ext/sitepackage/Resources/Public/Images/Logos/LogoLand.svg" alt="Montessori Landesverband Bayern" />
+          </a>
         </div>
         <div class="contact-box" style="margin-top:0">
           <h4>Legal</h4>
