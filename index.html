@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Montessori Kindergarten Baobab – Munich</title>
+
+  <!-- Primary SEO -->
+  <title>Montessori Kindergarten Baobab München | Bilingual German–English Preschool in Central Munich</title>
+  <meta name="description" content="Baobab is a bilingual German–English Montessori kindergarten in central Munich. Founded as a parents' initiative in 1996. 19 places for international and expat families, children aged 3–6. Apply online." />
+  <meta name="keywords" content="Montessori Kindergarten München, bilingual kindergarten Munich, English German preschool Munich central, Elterninitiative München, international kindergarten München, zweisprachiger Kindergarten München, Montessori Kita München, bilingualer Montessori Kindergarten München, expat kindergarten Munich, international preschool Munich, Montessori preschool Munich, Kindergarten München Haidhausen" />
+  <link rel="canonical" href="https://kindergarten-baobab.de/" />
+
+  <!-- Hreflang for bilingual site -->
+  <link rel="alternate" hreflang="en" href="https://kindergarten-baobab.de/" />
+  <link rel="alternate" hreflang="de" href="https://kindergarten-baobab.de/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://kindergarten-baobab.de/" />
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kindergarten-baobab.de/" />
+  <meta property="og:title" content="Montessori Kindergarten Baobab – Bilingual German &amp; English, Central Munich" />
+  <meta property="og:description" content="A bilingual German/English Montessori kindergarten in central Munich for international, expat and German families. Parents' initiative since 1996. 19 places, ages 3–6." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:site_name" content="Kindergarten Baobab München" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Montessori Kindergarten Baobab München" />
+  <meta name="twitter:description" content="Bilingual German/English Montessori kindergarten in Munich. Parents' initiative since 1996." />
+
+  <!-- Structured data: LocalBusiness + ChildCare -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ChildCare", "LocalBusiness"],
+    "name": "Montessori Kindergarten Baobab",
+    "alternateName": ["Baobab e.V.", "Kindergarten Baobab München"],
+    "description": "A private bilingual German/English Montessori kindergarten in central Munich, founded as a parents' initiative in 1996. 19 places for international, expat and German families with children aged 3–6.",
+    "url": "https://kindergarten-baobab.de",
+    "email": "anmeldung@kindergarten-baobab.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Zeppelinstraße 69",
+      "addressLocality": "München",
+      "addressRegion": "Bayern",
+      "postalCode": "81669",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.1233,
+      "longitude": 11.5917
+    },
+    "hasMap": "https://maps.google.com/?q=Zeppelinstraße+69,+81669+München",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday"], "opens": "08:00", "closes": "16:45" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Friday"], "opens": "08:00", "closes": "15:45" }
+    ],
+    "foundingDate": "1996",
+    "priceRange": "€€",
+    "inLanguage": ["de", "en"],
+    "availableLanguage": [
+      { "@type": "Language", "name": "German" },
+      { "@type": "Language", "name": "English" }
+    ],
+    "keywords": "Montessori, bilingual, German, English, kindergarten, Munich, Elterninitiative, international, expat",
+    "areaServed": {
+      "@type": "City",
+      "name": "München"
+    },
+    "sameAs": [
+      "https://kindergarten-baobab.de"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -24,158 +94,154 @@
     html { scroll-behavior: smooth; }
     body { background: var(--cream); color: var(--bark); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
 
-```
-/* NAV */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(250,247,242,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--mist); }
-.nav-logo { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; letter-spacing: 0.03em; color: var(--bark); text-decoration: none; }
-.nav-logo span { color: var(--terra); }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bark); text-decoration: none; font-weight: 400; opacity: 0.65; transition: opacity 0.2s; }
-.nav-links a:hover { opacity: 1; }
-.nav-lang { display: flex; gap: 0.4rem; font-size: 0.74rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; }
-.nav-lang a { color: var(--bark); text-decoration: none; opacity: 0.45; transition: opacity 0.2s; }
-.nav-lang a:hover, .nav-lang a.active { opacity: 1; }
-.nav-lang span { opacity: 0.25; }
-.nav-right { display: flex; align-items: center; gap: 1.5rem; }
-.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--bark); }
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(250,247,242,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--mist); }
+    .nav-logo { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; letter-spacing: 0.03em; color: var(--bark); text-decoration: none; }
+    .nav-logo span { color: var(--terra); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bark); text-decoration: none; font-weight: 400; opacity: 0.65; transition: opacity 0.2s; }
+    .nav-links a:hover { opacity: 1; }
+    .nav-lang { display: flex; gap: 0.4rem; font-size: 0.74rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; }
+    .nav-lang a { color: var(--bark); text-decoration: none; opacity: 0.45; transition: opacity 0.2s; }
+    .nav-lang a:hover, .nav-lang a.active { opacity: 1; }
+    .nav-lang span { opacity: 0.25; }
+    .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--bark); }
 
-/* HERO */
-#home { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
-.hero-text { display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; }
-.hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.5rem; font-weight: 400; }
-.hero-h1 { font-family: var(--serif); font-size: clamp(2.8rem, 4.5vw, 4.8rem); font-weight: 300; line-height: 1.1; color: var(--bark); margin-bottom: 1.5rem; }
-.hero-h1 em { font-style: italic; color: var(--forest); }
-.hero-desc { font-size: 0.95rem; max-width: 420px; opacity: 0.75; margin-bottom: 2.5rem; line-height: 1.9; }
-.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary { background: var(--terra); color: #fff; border: none; cursor: pointer; padding: 0.85rem 2rem; font-family: var(--sans); font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: background 0.25s, transform 0.2s; }
-.btn-primary:hover { background: #ad6337; transform: translateY(-2px); }
-.btn-secondary { background: transparent; color: var(--bark); border: 1px solid var(--mist); cursor: pointer; padding: 0.85rem 2rem; font-family: var(--sans); font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: border-color 0.25s, transform 0.2s; }
-.btn-secondary:hover { border-color: var(--bark); transform: translateY(-2px); }
-.hero-visual { position: relative; overflow: hidden; background: var(--warm); }
-.hero-canvas { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-.hero-badges { position: absolute; bottom: 2.5rem; left: 2rem; display: flex; flex-direction: column; gap: 0.75rem; z-index: 2; }
-.badge { background: rgba(250,247,242,0.92); backdrop-filter: blur(8px); padding: 0.6rem 1.1rem; display: flex; align-items: center; gap: 0.7rem; font-size: 0.78rem; border-left: 3px solid var(--terra); animation: slideIn 0.7s ease backwards; }
-.badge:nth-child(2) { animation-delay: 0.12s; }
-.badge:nth-child(3) { animation-delay: 0.24s; }
-.badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--forest); flex-shrink: 0; }
-@keyframes slideIn { from { opacity:0; transform:translateX(-18px); } to { opacity:1; transform:translateX(0); } }
+    /* HERO */
+    #home { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+    .hero-text { display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; }
+    .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.5rem; font-weight: 400; }
+    .hero-h1 { font-family: var(--serif); font-size: clamp(2.8rem, 4.5vw, 4.8rem); font-weight: 300; line-height: 1.1; color: var(--bark); margin-bottom: 1.5rem; }
+    .hero-h1 em { font-style: italic; color: var(--forest); }
+    .hero-desc { font-size: 0.95rem; max-width: 420px; opacity: 0.75; margin-bottom: 2.5rem; line-height: 1.9; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary { background: var(--terra); color: #fff; border: none; cursor: pointer; padding: 0.85rem 2rem; font-family: var(--sans); font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: background 0.25s, transform 0.2s; }
+    .btn-primary:hover { background: #ad6337; transform: translateY(-2px); }
+    .btn-secondary { background: transparent; color: var(--bark); border: 1px solid var(--mist); cursor: pointer; padding: 0.85rem 2rem; font-family: var(--sans); font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: border-color 0.25s, transform 0.2s; }
+    .btn-secondary:hover { border-color: var(--bark); transform: translateY(-2px); }
+    .hero-visual { position: relative; overflow: hidden; background: var(--warm); }
+    .hero-canvas { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+    .hero-badges { position: absolute; bottom: 2.5rem; left: 2rem; display: flex; flex-direction: column; gap: 0.75rem; z-index: 2; }
+    .badge { background: rgba(250,247,242,0.92); backdrop-filter: blur(8px); padding: 0.6rem 1.1rem; display: flex; align-items: center; gap: 0.7rem; font-size: 0.78rem; border-left: 3px solid var(--terra); animation: slideIn 0.7s ease backwards; }
+    .badge:nth-child(2) { animation-delay: 0.12s; }
+    .badge:nth-child(3) { animation-delay: 0.24s; }
+    .badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--forest); flex-shrink: 0; }
+    @keyframes slideIn { from { opacity:0; transform:translateX(-18px); } to { opacity:1; transform:translateX(0); } }
 
-/* PILLARS */
-#pillars { background: var(--forest); display: grid; grid-template-columns: repeat(3,1fr); }
-.pillar { padding: 3.5rem 2.5rem; border-right: 1px solid rgba(255,255,255,0.08); transition: background 0.3s; }
-.pillar:last-child { border-right: none; }
-.pillar:hover { background: rgba(255,255,255,0.04); }
-.pillar-num { font-family: var(--serif); font-size: 3rem; font-weight: 300; color: var(--terra); line-height: 1; margin-bottom: 1rem; display: block; }
-.pillar h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; color: #fff; margin-bottom: 0.75rem; }
-.pillar p { color: rgba(255,255,255,0.6); font-size: 0.87rem; line-height: 1.85; }
+    /* PILLARS */
+    #pillars { background: var(--forest); display: grid; grid-template-columns: repeat(3,1fr); }
+    .pillar { padding: 3.5rem 2.5rem; border-right: 1px solid rgba(255,255,255,0.08); transition: background 0.3s; }
+    .pillar:last-child { border-right: none; }
+    .pillar:hover { background: rgba(255,255,255,0.04); }
+    .pillar-num { font-family: var(--serif); font-size: 3rem; font-weight: 300; color: var(--terra); line-height: 1; margin-bottom: 1rem; display: block; }
+    .pillar h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; color: #fff; margin-bottom: 0.75rem; }
+    .pillar p { color: rgba(255,255,255,0.6); font-size: 0.87rem; line-height: 1.85; }
 
-/* SECTIONS */
-section { padding: 7rem 0; }
-.container { max-width: 1100px; margin: 0 auto; padding: 0 3rem; }
-.section-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 1rem; display: block; }
-.section-title { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.2rem; }
-.divider { width: 48px; height: 2px; background: var(--terra); margin-bottom: 2.5rem; }
+    /* SECTIONS */
+    section { padding: 7rem 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 3rem; }
+    .section-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 1rem; display: block; }
+    .section-title { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.2rem; }
+    .divider { width: 48px; height: 2px; background: var(--terra); margin-bottom: 2.5rem; }
 
-/* HOW WE WORK */
-#how { background: var(--sand); }
-.how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.how-intro p { opacity: 0.78; font-size: 0.93rem; line-height: 1.95; margin-bottom: 1.2rem; }
-.how-cards { display: flex; flex-direction: column; gap: 1.25rem; }
-.how-card { background: var(--cream); padding: 1.75rem 2rem; border-left: 3px solid transparent; transition: border-color 0.25s, transform 0.25s; }
-.how-card:hover { border-color: var(--terra); transform: translateX(5px); }
-.how-card h4 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; }
-.how-card p { font-size: 0.87rem; opacity: 0.72; line-height: 1.85; }
-.times-section { margin-top: 3rem; }
-.times-title { font-family: var(--serif); font-size: 1.15rem; margin-bottom: 1.1rem; font-weight: 600; }
-.times-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.75rem; margin-bottom: 1.25rem; }
-.time-block { background: var(--cream); padding: 1.1rem 1.4rem; }
-.time-block strong { display: block; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.25rem; }
-.time-block span { font-family: var(--serif); font-size: 1.05rem; }
-.closing-list { font-size: 0.87rem; opacity: 0.72; line-height: 2.1; list-style: none; }
-.closing-list li::before { content: "— "; color: var(--terra); }
+    /* HOW WE WORK */
+    #how { background: var(--sand); }
+    .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .how-intro p { opacity: 0.78; font-size: 0.93rem; line-height: 1.95; margin-bottom: 1.2rem; }
+    .how-cards { display: flex; flex-direction: column; gap: 1.25rem; }
+    .how-card { background: var(--cream); padding: 1.75rem 2rem; border-left: 3px solid transparent; transition: border-color 0.25s, transform 0.25s; }
+    .how-card:hover { border-color: var(--terra); transform: translateX(5px); }
+    .how-card h4 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .how-card p { font-size: 0.87rem; opacity: 0.72; line-height: 1.85; }
+    .times-section { margin-top: 3rem; }
+    .times-title { font-family: var(--serif); font-size: 1.15rem; margin-bottom: 1.1rem; font-weight: 600; }
+    .times-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.75rem; margin-bottom: 1.25rem; }
+    .time-block { background: var(--cream); padding: 1.1rem 1.4rem; }
+    .time-block strong { display: block; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.25rem; }
+    .time-block span { font-family: var(--serif); font-size: 1.05rem; }
+    .closing-list { font-size: 0.87rem; opacity: 0.72; line-height: 2.1; list-style: none; }
+    .closing-list li::before { content: "— "; color: var(--terra); }
 
-/* ABOUT */
-.about-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 5rem; align-items: start; }
-.about-text p { opacity: 0.78; font-size: 0.93rem; line-height: 1.95; margin-bottom: 1.2rem; }
-.team-list { display: flex; flex-direction: column; }
-.team-member { display: flex; align-items: flex-start; gap: 1.25rem; padding: 1.1rem 0; border-bottom: 1px solid var(--mist); }
-.team-member:first-child { border-top: 1px solid var(--mist); }
-.member-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--warm); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.05rem; color: var(--terra); flex-shrink: 0; font-weight: 600; }
-.member-name { font-weight: 500; font-size: 0.9rem; margin-bottom: 0.1rem; }
-.member-role { font-size: 0.8rem; opacity: 0.6; }
-.member-lang { margin-top: 0.2rem; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--forest); }
+    /* ABOUT */
+    .about-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 5rem; align-items: start; }
+    .about-text p { opacity: 0.78; font-size: 0.93rem; line-height: 1.95; margin-bottom: 1.2rem; }
+    .team-list { display: flex; flex-direction: column; }
+    .team-member { display: flex; align-items: flex-start; gap: 1.25rem; padding: 1.1rem 0; border-bottom: 1px solid var(--mist); }
+    .team-member:first-child { border-top: 1px solid var(--mist); }
+    .member-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--warm); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.05rem; color: var(--terra); flex-shrink: 0; font-weight: 600; }
+    .member-name { font-weight: 500; font-size: 0.9rem; margin-bottom: 0.1rem; }
+    .member-role { font-size: 0.8rem; opacity: 0.6; }
+    .member-lang { margin-top: 0.2rem; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--forest); }
 
-/* TESTIMONIALS */
-#testimonials { background: var(--bark); }
-#testimonials .section-title { color: #fff; }
-#testimonials .section-label { color: var(--terra); }
-.testi-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; margin-top: 3rem; }
-.testi-card { background: rgba(255,255,255,0.05); padding: 2.25rem; border-top: 2px solid var(--terra); position: relative; }
-.testi-mark { font-family: var(--serif); font-size: 5rem; line-height: 1; color: var(--terra); opacity: 0.3; position: absolute; top: 0.75rem; right: 1.5rem; }
-.testi-text { color: rgba(255,255,255,0.72); font-size: 0.88rem; line-height: 1.95; font-style: italic; margin-bottom: 1.5rem; }
-.testi-author { color: #fff; font-size: 0.78rem; letter-spacing: 0.06em; font-weight: 500; }
-.testi-author span { color: var(--terra); }
+    /* TESTIMONIALS */
+    #testimonials { background: var(--bark); }
+    #testimonials .section-title { color: #fff; }
+    #testimonials .section-label { color: var(--terra); }
+    .testi-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; margin-top: 3rem; }
+    .testi-card { background: rgba(255,255,255,0.05); padding: 2.25rem; border-top: 2px solid var(--terra); position: relative; }
+    .testi-mark { font-family: var(--serif); font-size: 5rem; line-height: 1; color: var(--terra); opacity: 0.3; position: absolute; top: 0.75rem; right: 1.5rem; }
+    .testi-text { color: rgba(255,255,255,0.72); font-size: 0.88rem; line-height: 1.95; font-style: italic; margin-bottom: 1.5rem; }
+    .testi-author { color: #fff; font-size: 0.78rem; letter-spacing: 0.06em; font-weight: 500; }
+    .testi-author span { color: var(--terra); }
 
-/* APPLY */
-#apply { background: var(--warm); }
-.apply-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.apply-text p { opacity: 0.78; font-size: 0.93rem; line-height: 1.95; margin-bottom: 1.5rem; }
-.apply-box { background: var(--cream); padding: 2.5rem; border-left: 4px solid var(--forest); }
-.apply-box h4 { font-family: var(--serif); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 600; }
-.apply-row { display: flex; gap: 0.9rem; padding: 0.85rem 0; border-bottom: 1px solid var(--mist); font-size: 0.88rem; align-items: flex-start; }
-.apply-row:last-child { border-bottom: none; }
-.apply-icon { color: var(--terra); flex-shrink: 0; font-size: 0.6rem; margin-top: 0.55rem; }
-.apply-row strong { display: block; font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--forest); margin-bottom: 0.2rem; }
+    /* APPLY */
+    #apply { background: var(--warm); }
+    .apply-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .apply-text p { opacity: 0.78; font-size: 0.93rem; line-height: 1.95; margin-bottom: 1.5rem; }
+    .apply-box { background: var(--cream); padding: 2.5rem; border-left: 4px solid var(--forest); }
+    .apply-box h4 { font-family: var(--serif); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 600; }
+    .apply-row { display: flex; gap: 0.9rem; padding: 0.85rem 0; border-bottom: 1px solid var(--mist); font-size: 0.88rem; align-items: flex-start; }
+    .apply-row:last-child { border-bottom: none; }
+    .apply-icon { color: var(--terra); flex-shrink: 0; font-size: 0.6rem; margin-top: 0.55rem; }
+    .apply-row strong { display: block; font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--forest); margin-bottom: 0.2rem; }
 
-/* CONTACT */
-.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.contact-box { background: var(--sand); padding: 2.25rem; margin-bottom: 1.25rem; }
-.contact-box h4 { font-family: var(--serif); font-size: 1.25rem; margin-bottom: 1.25rem; font-weight: 600; }
-.contact-item { display: flex; gap: 0.75rem; margin-bottom: 0.9rem; font-size: 0.9rem; opacity: 0.78; }
-.contact-icon { color: var(--terra); flex-shrink: 0; }
-.contact-item a { color: inherit; }
-.contact-notice { background: var(--warm); border-left: 3px solid var(--terra); padding: 1rem 1.25rem; font-size: 0.84rem; opacity: 0.78; margin-top: 1.25rem; line-height: 1.8; }
-.supporter-badge { display: inline-block; background: var(--warm); padding: 0.45rem 0.9rem; font-size: 0.78rem; color: var(--forest); font-weight: 500; margin: 0.25rem 0.25rem 0 0; text-decoration: none; transition: background 0.2s; }
-.supporter-badge:hover { background: var(--mist); }
+    /* CONTACT */
+    .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .contact-box { background: var(--sand); padding: 2.25rem; margin-bottom: 1.25rem; }
+    .contact-box h4 { font-family: var(--serif); font-size: 1.25rem; margin-bottom: 1.25rem; font-weight: 600; }
+    .contact-item { display: flex; gap: 0.75rem; margin-bottom: 0.9rem; font-size: 0.9rem; opacity: 0.78; }
+    .contact-icon { color: var(--terra); flex-shrink: 0; }
+    .contact-item a { color: inherit; }
+    .contact-notice { background: var(--warm); border-left: 3px solid var(--terra); padding: 1rem 1.25rem; font-size: 0.84rem; opacity: 0.78; margin-top: 1.25rem; line-height: 1.8; }
+    .supporter-badge { display: inline-block; background: var(--warm); padding: 0.45rem 0.9rem; font-size: 0.78rem; color: var(--forest); font-weight: 500; margin: 0.25rem 0.25rem 0 0; text-decoration: none; transition: background 0.2s; }
+    .supporter-badge:hover { background: var(--mist); }
 
-/* FOOTER */
-footer { background: var(--bark); color: rgba(255,255,255,0.45); padding: 2rem 3rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.77rem; flex-wrap: wrap; gap: 1rem; }
-footer a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
-footer a:hover { color: #fff; }
-.footer-links { display: flex; gap: 1.5rem; }
+    /* FOOTER */
+    footer { background: var(--bark); color: rgba(255,255,255,0.45); padding: 2rem 3rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.77rem; flex-wrap: wrap; gap: 1rem; }
+    footer a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 1.5rem; }
 
-/* FADE-UP */
-.fade-up { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
+    /* FADE-UP */
+    .fade-up { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  nav { padding: 1rem 1.5rem; }
-  .nav-links { display: none; }
-  .nav-links.open { display: flex; flex-direction: column; position: fixed; inset: 0; background: var(--cream); padding: 5rem 2rem 2rem; z-index: 90; gap: 0; }
-  .nav-links.open a { font-size: 1.4rem; padding: 0.75rem 0; opacity: 1; }
-  .nav-hamburger { display: flex; z-index: 101; }
-  #home { grid-template-columns: 1fr; min-height: auto; }
-  .hero-text { padding: 3rem 1.5rem 2rem; }
-  .hero-visual { height: 280px; }
-  #pillars { grid-template-columns: 1fr; }
-  .pillar { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .how-grid, .about-layout, .apply-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-  .testi-grid { grid-template-columns: 1fr; }
-  .container { padding: 0 1.5rem; }
-  section { padding: 4rem 0; }
-  .times-grid { grid-template-columns: 1fr; }
-  footer { padding: 1.5rem; flex-direction: column; align-items: flex-start; }
-}
-```
-
+    /* MOBILE */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; flex-direction: column; position: fixed; inset: 0; background: var(--cream); padding: 5rem 2rem 2rem; z-index: 90; gap: 0; }
+      .nav-links.open a { font-size: 1.4rem; padding: 0.75rem 0; opacity: 1; }
+      .nav-hamburger { display: flex; z-index: 101; }
+      #home { grid-template-columns: 1fr; min-height: auto; }
+      .hero-text { padding: 3rem 1.5rem 2rem; }
+      .hero-visual { height: 280px; }
+      #pillars { grid-template-columns: 1fr; }
+      .pillar { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .how-grid, .about-layout, .apply-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .container { padding: 0 1.5rem; }
+      section { padding: 4rem 0; }
+      .times-grid { grid-template-columns: 1fr; }
+      footer { padding: 1.5rem; flex-direction: column; align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-
 <nav>
   <a href="#home" class="nav-logo">Baobab <span>·</span> Kindergarten</a>
   <ul class="nav-links" id="navLinks">
@@ -198,12 +264,11 @@ footer a:hover { color: #fff; }
 </nav>
 
 <!-- HERO -->
-
 <section id="home">
   <div class="hero-text">
-    <p class="hero-eyebrow">Since 1996 &nbsp;·&nbsp; Munich &nbsp;·&nbsp; Bilingual Montessori</p>
+    <p class="hero-eyebrow">Since 1996 &nbsp;·&nbsp; Central Munich &nbsp;·&nbsp; Bilingual Montessori</p>
     <h1 class="hero-h1">Where every child <em>flourishes</em> in their own way</h1>
-    <p class="hero-desc">A private bilingual (German/English) Montessori kindergarten founded as a parents' initiative — nurturing independence, curiosity, and intercultural respect in children aged 3–6.</p>
+    <p class="hero-desc">A private bilingual German–English Montessori kindergarten in central Munich, founded as a parents' initiative in 1996. Welcoming international, expat, and German families — 19 places for children aged 3–6.</p>
     <div class="hero-ctas">
       <a href="#apply" class="btn-primary">Apply for a place</a>
       <a href="#how" class="btn-secondary">How we work</a>
@@ -242,7 +307,6 @@ footer a:hover { color: #fff; }
 </section>
 
 <!-- THREE PILLARS -->
-
 <div id="pillars">
   <div class="pillar fade-up">
     <span class="pillar-num">01</span>
@@ -262,7 +326,6 @@ footer a:hover { color: #fff; }
 </div>
 
 <!-- HOW WE WORK -->
-
 <section id="how">
   <div class="container">
     <div class="how-grid">
@@ -320,7 +383,6 @@ footer a:hover { color: #fff; }
 </section>
 
 <!-- ABOUT US -->
-
 <section id="about">
   <div class="container">
     <div class="about-layout">
@@ -384,7 +446,6 @@ footer a:hover { color: #fff; }
 </section>
 
 <!-- TESTIMONIALS -->
-
 <section id="testimonials">
   <div class="container">
     <span class="section-label">What families say</span>
@@ -415,7 +476,6 @@ footer a:hover { color: #fff; }
 </section>
 
 <!-- APPLY -->
-
 <section id="apply">
   <div class="container">
     <div class="apply-layout">
@@ -458,7 +518,6 @@ footer a:hover { color: #fff; }
 </section>
 
 <!-- CONTACT -->
-
 <section id="contact">
   <div class="container">
     <div class="contact-layout">
@@ -474,7 +533,7 @@ footer a:hover { color: #fff; }
           </div>
           <div class="contact-item">
             <span class="contact-icon">✉</span>
-            <span><a href="mailto:anmeldung@kindergarten-baobab.de">anmeldung@kindergarten-baobab.de</a></span>
+            <span><a href="/cdn-cgi/l/email-protection#40212e2d252c24352e27002b292e24253227213234252e6d22212f2221226e2425"><span class="__cf_email__" data-cfemail="d1b0bfbcb4bdb5a4bfb691bab8bfb5b4a3b6b0a3a5b4bffcb3b0beb3b0b3ffb5b4">[email&#160;protected]</span></a></span>
           </div>
           <div class="contact-notice">
             Please do not visit the kindergarten without a pre-arranged appointment. During opening hours, the team is fully dedicated to the care of the children.
@@ -503,7 +562,6 @@ footer a:hover { color: #fff; }
 </section>
 
 <!-- FOOTER -->
-
 <footer>
   <span>© 2025 Baobab e.V. &nbsp;·&nbsp; Montessori Kindergarten München</span>
   <div class="footer-links">
@@ -513,15 +571,8 @@ footer a:hover { color: #fff; }
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
   function closeMenu()  { document.getElementById('navLinks').classList.remove('open'); }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
-
-</body>
-</html>
+  const
