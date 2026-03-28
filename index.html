@@ -214,9 +214,10 @@
     footer a:hover { color: #fff; }
     .footer-links { display: flex; gap: 1.5rem; }
 
-    /* FADE-UP */
-    .fade-up { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    /* FADE-UP — visible by default; animation only applies if JS successfully runs */
+    .fade-up { opacity: 1; transform: translateY(0); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .js-loaded .fade-up { opacity: 0; transform: translateY(22px); }
+    .js-loaded .fade-up.visible { opacity: 1; transform: translateY(0); }
 
     /* MOBILE */
     @media (max-width: 900px) {
@@ -575,4 +576,13 @@
   function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
   function closeMenu()  { document.getElementById('navLinks').classList.remove('open'); }
 
-  const
+  // Add class so fade-up CSS only activates when JS is confirmed working
+  document.body.classList.add('js-loaded');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
