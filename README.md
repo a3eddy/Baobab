@@ -4,7 +4,7 @@ This is the website for **Baobab e.V.**, a bilingual (German/English) Montessori
 
 🌐 **Live site:** [kindergarten-baobab.de](https://kindergarten-baobab.de)
 
----
+----
 
 ## About this repository
 
