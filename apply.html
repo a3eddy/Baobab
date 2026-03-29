@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for a Place – Montessori Kindergarten Baobab München</title>
+  <meta name="description" content="Apply for a place at Baobab, a bilingual German–English Montessori kindergarten in central Munich. 19 places for children aged 3–6." />
+  <link rel="canonical" href="https://kindergarten-baobab.de/apply/" />
+  <link rel="alternate" hreflang="en" href="https://kindergarten-baobab.de/apply.html" />
+  <link rel="alternate" hreflang="de" href="https://kindergarten-baobab.de/de-apply.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kindergarten-baobab.de/apply.html" />
+  <meta property="og:title" content="Apply for a Place – Montessori Kindergarten Baobab München" />
+  <meta property="og:description" content="Apply online for a place at Baobab, a bilingual German–English Montessori kindergarten in central Munich. 19 places for children aged 3–6." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Kindergarten Baobab München" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --sand:   #f5f0e8;
+      --warm:   #ede5d5;
+      --terra:  #c4784a;
+      --forest: #3a5c40;
+      --bark:   #2b1f12;
+      --mist:   #d6cfc2;
+      --cream:  #faf7f2;
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'DM Sans', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--cream); color: var(--bark); font-family: var(--sans); font-weight: 300; line-height: 1.7; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(250,247,242,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--mist); }
+    .nav-logo { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; letter-spacing: 0.03em; color: var(--bark); text-decoration: none; }
+    .nav-logo span { color: var(--terra); }
+    .nav-back { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bark); text-decoration: none; opacity: 0.65; transition: opacity 0.2s; }
+    .nav-back:hover { opacity: 1; }
+    .nav-lang { display: flex; gap: 0.4rem; font-size: 0.74rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; }
+    .nav-lang a { color: var(--bark); text-decoration: none; opacity: 0.45; transition: opacity 0.2s; }
+    .nav-lang a:hover, .nav-lang a.active { opacity: 1; }
+    .nav-lang span { opacity: 0.25; }
+
+    /* PAGE */
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 8rem 2rem 6rem; }
+    .page-eyebrow { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 1rem; display: block; }
+    .page-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.15; margin-bottom: 1rem; }
+    .divider { width: 48px; height: 2px; background: var(--terra); margin-bottom: 2rem; }
+    .page-intro { font-size: 0.93rem; opacity: 0.75; line-height: 1.9; margin-bottom: 2.5rem; max-width: 560px; }
+
+    /* FORM */
+    .form-section { margin-bottom: 2.5rem; }
+    .form-section-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--mist); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
+    .form-group.full { grid-column: 1 / -1; }
+    label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--forest); font-weight: 400; }
+    input, select, textarea {
+      background: var(--sand); border: 1px solid var(--mist); padding: 0.75rem 1rem;
+      font-family: var(--sans); font-size: 0.9rem; font-weight: 300; color: var(--bark);
+      outline: none; transition: border-color 0.2s; width: 100%; appearance: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--terra); }
+    textarea { resize: vertical; min-height: 100px; }
+    select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232b1f12' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; cursor: pointer; }
+    .required { color: var(--terra); }
+
+    /* SUBMIT */
+    .btn-primary { background: var(--terra); color: #fff; border: none; cursor: pointer; padding: 0.9rem 2.5rem; font-family: var(--sans); font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; display: inline-block; transition: background 0.25s, transform 0.2s; margin-top: 0.5rem; }
+    .btn-primary:hover { background: #ad6337; transform: translateY(-2px); }
+
+    /* SUCCESS */
+    .success-box { background: var(--forest); color: #fff; padding: 2.5rem; text-align: center; display: none; }
+    .success-box h3 { font-family: var(--serif); font-size: 1.8rem; font-weight: 300; margin-bottom: 0.75rem; }
+    .success-box p { opacity: 0.8; font-size: 0.9rem; line-height: 1.8; }
+    .success-box a { color: #fff; }
+
+    /* NOTICE */
+    .form-notice { background: var(--warm); border-left: 3px solid var(--terra); padding: 1rem 1.25rem; font-size: 0.84rem; opacity: 0.78; margin-bottom: 2rem; line-height: 1.8; }
+
+    /* FOOTER */
+    footer { background: var(--bark); color: rgba(255,255,255,0.45); padding: 1.5rem 3rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.77rem; flex-wrap: wrap; gap: 1rem; }
+    footer a { color: rgba(255,255,255,0.45); text-decoration: none; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.5rem; }
+      .page-wrap { padding: 6rem 1.5rem 4rem; }
+      .form-grid { grid-template-columns: 1fr; }
+      footer { padding: 1.5rem; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Baobab <span>·</span> Kindergarten</a>
+  <a href="index.html" class="nav-back">← Back to home</a>
+  <div class="nav-lang">
+    <a href="de-apply.html" >DE</a>
+    <span>|</span>
+    <a href="apply.html" class="active">EN</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <span class="page-eyebrow">Online Application</span>
+  <h1 class="page-title">Apply for a place at Baobab</h1>
+  <div class="divider"></div>
+  <p class="page-intro">We welcome children from German, binational, and non-German families. Please complete the form below and we will be in touch. All fields marked <span class="required">*</span> are required.</p>
+
+  <div class="form-notice">
+    Please do not call or visit the kindergarten without a pre-arranged appointment. During opening hours, the team is fully dedicated to the care of the children. All enquiries by email or via this form only.
+  </div>
+
+  <!-- Netlify Form — data-netlify="true" enables Netlify to capture submissions -->
+  <form name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="appForm">
+    <input type="hidden" name="form-name" value="application" />
+    <p style="display:none"><input name="bot-field" /></p>
+
+    <div class="form-section">
+      <div class="form-section-title">Child's details</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="child-first">First name <span class="required">*</span></label>
+          <input type="text" id="child-first" name="child_first_name" required />
+        </div>
+        <div class="form-group">
+          <label for="child-last">Last name <span class="required">*</span></label>
+          <input type="text" id="child-last" name="child_last_name" required />
+        </div>
+        <div class="form-group">
+          <label for="child-dob">Date of birth <span class="required">*</span></label>
+          <input type="date" id="child-dob" name="child_date_of_birth" required />
+        </div>
+        <div class="form-group">
+          <label for="child-gender">Gender</label>
+          <select id="child-gender" name="child_gender">
+            <option value="">Please select</option>
+            <option>Girl</option>
+            <option>Boy</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="child-nationality">Nationality <span class="required">*</span></label>
+          <input type="text" id="child-nationality" name="child_nationality" required />
+        </div>
+        <div class="form-group">
+          <label for="child-language">Mother tongue(s)</label>
+          <input type="text" id="child-language" name="child_languages" placeholder="e.g. German, English" />
+        </div>
+        <div class="form-group">
+          <label for="start-date">Desired start date <span class="required">*</span></label>
+          <input type="text" id="start-date" name="desired_start_date" placeholder="e.g. September 2025" required />
+        </div>
+        <div class="form-group">
+          <label for="siblings">Siblings currently at Baobab?</label>
+          <select id="siblings" name="siblings_at_baobab">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Parent / Guardian details</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="parent-first">First name <span class="required">*</span></label>
+          <input type="text" id="parent-first" name="parent_first_name" required />
+        </div>
+        <div class="form-group">
+          <label for="parent-last">Last name <span class="required">*</span></label>
+          <input type="text" id="parent-last" name="parent_last_name" required />
+        </div>
+        <div class="form-group">
+          <label for="parent-email">Email address <span class="required">*</span></label>
+          <input type="email" id="parent-email" name="parent_email" required />
+        </div>
+        <div class="form-group">
+          <label for="parent-phone">Phone number</label>
+          <input type="tel" id="parent-phone" name="parent_phone" />
+        </div>
+        <div class="form-group full">
+          <label for="parent-address">Home address</label>
+          <input type="text" id="parent-address" name="parent_address" placeholder="Street, postcode, city" />
+        </div>
+        <div class="form-group">
+          <label for="parent-nationality">Family nationality / background</label>
+          <input type="text" id="parent-nationality" name="family_background" placeholder="e.g. German–American" />
+        </div>
+        <div class="form-group">
+          <label for="heard">How did you hear about us?</label>
+          <select id="heard" name="how_heard">
+            <option value="">Please select</option>
+            <option>Word of mouth</option>
+            <option>Google search</option>
+            <option>Munich expat community</option>
+            <option>Toytowngermany.com</option>
+            <option>Social media</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Additional information</div>
+      <div class="form-group">
+        <label for="message">Any questions or additional information you'd like to share?</label>
+        <textarea id="message" name="message" placeholder="Tell us anything relevant about your child or family situation..."></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-primary">Submit Application</button>
+  </form>
+
+  <div class="success-box" id="successBox">
+    <h3>Thank you for your application!</h3>
+    <p>We have received your enquiry and will be in touch at <strong id="confirmedEmail"></strong> as soon as possible.<br>Please do not call or visit without a pre-arranged appointment.<br><br><a href="index.html">← Return to home</a></p>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Baobab e.V. · Montessori Kindergarten München</span>
+  <div style="display:flex;gap:1.5rem">
+    <a href="https://kindergarten-baobab.de/datenschutz/">Datenschutz</a>
+    <a href="https://kindergarten-baobab.de/impressum/">Impressum</a>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('appForm');
+  const successBox = document.getElementById('successBox');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() });
+      form.style.display = 'none';
+      successBox.style.display = 'block';
+      document.getElementById('confirmedEmail').textContent = data.get('parent_email');
+    } catch(err) {
+      alert('Something went wrong. Please email us directly at anmeldung@kindergarten-baobab.de');
+    }
+  });
+</script>
+</body>
+</html>
